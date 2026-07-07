@@ -60,6 +60,15 @@
   /* ----- hero video: graceful fallback to poster ----- */
   var video = document.getElementById('heroVideo');
   if (video) {
+    // mobile data saver: smaller video + poster on narrow screens
+    if (window.innerWidth <= 700) {
+      var src = video.querySelector('source');
+      if (src && src.src.indexOf('hero.mp4') !== -1) {
+        video.poster = 'assets/hero-poster-mobile.jpg';
+        src.src = 'assets/hero-mobile.mp4';
+        video.load();
+      }
+    }
     if (prefersReduced) {
       video.removeAttribute('autoplay');
       video.pause();
