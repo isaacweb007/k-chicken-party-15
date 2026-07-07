@@ -1030,8 +1030,17 @@ button:focus-visible {
 }
 
 /* ---------- story page ---------- */
-.nav--solid { position: sticky; }
-.nav__links a[aria-current="page"] { color: var(--red); }
+.nav--solid {
+  position: sticky;
+  background: rgba(255, 247, 230, 0.92);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 2px 20px rgba(59, 30, 16, 0.10);
+}
+.nav--solid .nav__logo { color: var(--ink); }
+.nav--solid .nav__links a { color: var(--brown-soft); }
+.nav--solid .nav__links a:hover { color: var(--red); }
+.nav--solid .nav__burger span { background: var(--ink); }
+.nav__links a[aria-current="page"] { color: var(--red) !important; }
 .nav__links a[aria-current="page"]::after { right: 0; }
 
 .shero {
