@@ -571,10 +571,7 @@ button:focus-visible {
   font-weight: 900;
   font-size: 1.6rem;
   line-height: 1;
-  background: var(--grad-fire);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--red);
   display: inline-block;
   position: absolute;
   top: 14px;
@@ -591,11 +588,7 @@ button:focus-visible {
   box-shadow: 0 4px 14px rgba(59, 30, 16, 0.22);
   z-index: -1;
 }
-.mcard--orange b {
-  background: linear-gradient(100deg, var(--orange), var(--yellow));
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+.mcard--orange b { color: var(--orange); }
 .mcard h4 { font-size: 1.08rem; font-weight: 800; }
 .mcard p {
   font-size: 0.82rem;
