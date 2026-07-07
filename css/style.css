@@ -534,19 +534,62 @@ button:focus-visible {
   box-shadow: var(--shadow-card);
   transition: transform 0.25s var(--ease-pop), box-shadow 0.25s ease;
   overflow: hidden;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .mcard:hover { transform: translateY(-6px) rotate(-0.6deg); box-shadow: 0 16px 36px rgba(59, 30, 16, 0.16); }
+.mcard__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.5s ease;
+}
+.mcard:hover .mcard__bg { transform: scale(1.06); }
+.mcard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.55) 52%,
+    rgba(255, 255, 255, 0.94) 72%,
+    var(--white) 100%);
+  pointer-events: none;
+}
+.mcard > b, .mcard > h4, .mcard > p, .mcard > span {
+  position: relative;
+  z-index: 2;
+}
 .mcard b {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1;
   background: var(--grad-fire);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  display: block;
-  margin-bottom: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 7px 12px;
+  border-radius: 14px;
+}
+.mcard b::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: var(--white);
+  box-shadow: 0 4px 14px rgba(59, 30, 16, 0.22);
+  z-index: -1;
 }
 .mcard--orange b {
   background: linear-gradient(100deg, var(--orange), var(--yellow));
@@ -562,6 +605,7 @@ button:focus-visible {
 }
 .mcard span {
   display: inline-block;
+  align-self: flex-start;
   font-size: 0.76rem;
   font-weight: 700;
   color: var(--red);
