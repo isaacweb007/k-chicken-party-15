@@ -79,4 +79,16 @@
       }
     }
   }
+
+  /* ----- chini pose videos: play only while visible ----- */
+  var poseVideos = document.querySelectorAll('.cvid video');
+  if (poseVideos.length && !prefersReduced && 'IntersectionObserver' in window) {
+    var vio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.play().catch(function () {}); }
+        else { e.target.pause(); }
+      });
+    }, { threshold: 0.2 });
+    poseVideos.forEach(function (v) { vio.observe(v); });
+  }
 })();
