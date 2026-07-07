@@ -221,6 +221,44 @@ button:focus-visible {
 .nav__links a:hover { color: var(--white); }
 .nav.is-scrolled .nav__links a:hover { color: var(--red); }
 
+.lang-sel {
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.95);
+  background:
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>')
+    right 12px center / 12px no-repeat,
+    rgba(255, 255, 255, 0.14);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  padding: 8px 32px 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.lang-sel option { color: var(--ink); background: var(--white); }
+.nav.is-scrolled .lang-sel,
+.nav--solid .lang-sel {
+  color: var(--brown-soft);
+  border-color: rgba(59, 30, 16, 0.3);
+  background:
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%235A3A28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>')
+    right 12px center / 12px no-repeat,
+    rgba(59, 30, 16, 0.06);
+}
+.nav__mobile .lang-sel {
+  margin-top: 14px;
+  color: var(--brown-soft);
+  border-color: rgba(59, 30, 16, 0.3);
+  background:
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%235A3A28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>')
+    right 12px center / 12px no-repeat,
+    rgba(59, 30, 16, 0.06);
+}
+.fit i { font-style: normal; }
+
 .nav__burger {
   display: none;
   background: none;
@@ -1307,7 +1345,7 @@ button:focus-visible {
 }
 
 @media (max-width: 860px) {
-  .nav__links, .btn--nav { display: none; }
+  .nav__links, .btn--nav, .nav__inner .lang-sel { display: none; }
   .nav__burger { display: flex; }
   .nav { background: transparent; }
   .nav.is-open { background: rgba(255, 247, 230, 0.98); }
