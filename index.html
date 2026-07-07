@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>K-Chicken Party 15 — 호치민 프리미엄 출장 K치킨 파티</title>
+  <meta name="description" content="20명만 모이면, 15가지 K치킨 파티가 통째로 찾아갑니다. 호치민 프리미엄 출장 파티 뷔페 K-Chicken Party 15 — Tiệc Gà Hàn Quốc 15 Món." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="K-Chicken Party 15 홈">
+        <span class="nav__logo-k">K-CHICKEN</span>
+        <span class="nav__logo-p">PARTY</span>
+        <span class="nav__logo-15">15</span>
+      </a>
+      <nav class="nav__links" aria-label="주요 메뉴">
+        <a href="#brand">브랜드</a>
+        <a href="#menu">메뉴 15</a>
+        <a href="#gallery">갤러리</a>
+        <a href="#pricing">가격</a>
+        <a href="#how">이용 방법</a>
+        <a href="#store">매장</a>
+      </nav>
+      <a href="#reserve" class="btn btn--nav">SNS 예약 문의</a>
+      <button class="nav__burger" id="burger" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#brand">브랜드</a>
+      <a href="#menu">메뉴 15</a>
+      <a href="#gallery">갤러리</a>
+      <a href="#pricing">가격</a>
+      <a href="#how">이용 방법</a>
+      <a href="#store">매장</a>
+      <a href="#reserve" class="btn btn--primary">SNS 예약 문의</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__media" id="heroMedia">
+      <video id="heroVideo" class="hero__video" autoplay muted loop playsinline
+             poster="assets/hero-poster.jpg" preload="auto">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__badge reveal">호치민 프리미엄 출장 K치킨 파티 · Tiệc Gà Hàn Quốc 15 Món</p>
+      <h1 class="hero__title reveal d1">
+        20명만 모이면,<br />
+        <span class="hero__title-accent">K치킨 파티</span> 출동!
+      </h1>
+      <p class="hero__sub reveal d2">
+        치킨 10종 + K분식 5종, 15가지 메뉴가 통째로 찾아가는<br class="br-desktop" />
+        2시간 프리미엄 출장 파티 뷔페
+      </p>
+      <div class="hero__chips reveal d3">
+        <span class="chip">3일 전 예약</span>
+        <span class="chip">2시간 현장 서비스</span>
+        <span class="chip">20명부터 출동</span>
+      </div>
+      <div class="hero__cta reveal d4">
+        <a href="#reserve" class="btn btn--primary btn--lg">지금 SNS 예약 문의</a>
+        <a href="#menu" class="btn btn--ghost btn--lg">메뉴 15가지 보기</a>
+      </div>
+    </div>
+
+    <a href="#brand" class="hero__scroll" aria-label="아래로 스크롤">
+      <span class="hero__scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>오리지널 크리스피</span><i>★</i><span>한국식 양념</span><i>★</i><span>간장마늘</span><i>★</i>
+      <span>허니버터</span><i>★</i><span>치즈시즈닝</span><i>★</i><span>볼케이노</span><i>★</i>
+      <span>갈릭마요</span><i>★</i><span>파닭</span><i>★</i><span>블랙페퍼 BBQ</span><i>★</i>
+      <span>떡볶이</span><i>★</i><span>치즈볼</span><i>★</i><span>식혜</span><i>★</i>
+      <span>오리지널 크리스피</span><i>★</i><span>한국식 양념</span><i>★</i><span>간장마늘</span><i>★</i>
+      <span>허니버터</span><i>★</i><span>치즈시즈닝</span><i>★</i><span>볼케이노</span><i>★</i>
+      <span>갈릭마요</span><i>★</i><span>파닭</span><i>★</i><span>블랙페퍼 BBQ</span><i>★</i>
+      <span>떡볶이</span><i>★</i><span>치즈볼</span><i>★</i><span>식혜</span><i>★</i>
+    </div>
+  </div>
+
+  <!-- ===== BRAND ===== -->
+  <section class="section brand" id="brand">
+    <div class="container brand__grid">
+      <div class="brand__text">
+        <p class="kicker reveal">WHY K-CHICKEN PARTY 15</p>
+        <h2 class="h2 reveal d1">치킨을 파는 게 아니라,<br /><em>파티를 통째로</em> 가져갑니다</h2>
+        <p class="lead reveal d2">
+          저가 출장뷔페가 아닙니다. 조리·보온·세팅 장비를 차량에 싣고 찾아가
+          한국식 치킨 파티의 맛과 분위기를 그대로 재현하는
+          <strong>프리미엄 출장 K푸드 서비스</strong>입니다.
+        </p>
+        <ul class="brand__points reveal d3">
+          <li>회사 회식 · 생일파티 · 학교 행사 · 팬미팅 · 가족파티</li>
+          <li>한국인 · 베트남인 · 외국인 모두 환영</li>
+          <li>누가 와도 같은 맛, 같은 세팅, 같은 서비스</li>
+        </ul>
+      </div>
+      <div class="brand__mascot reveal d2">
+        <img src="assets/chini.png" alt="K치킨파티15 마스코트 치니" id="chiniImg" loading="lazy" />
+        <p class="brand__mascot-name">Chini <small>Love in every peep!</small></p>
+      </div>
+    </div>
+
+    <div class="container promises">
+      <article class="promise reveal">
+        <div class="promise__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="m9 16 2 2 4-4"/></svg>
+        </div>
+        <h3>3일 전 예약</h3>
+        <p>SNS DM으로 간편하게. 예약금 50%로 날짜를 확정하면 준비는 저희가 다 합니다.</p>
+      </article>
+      <article class="promise promise--main reveal d1">
+        <div class="promise__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+        </div>
+        <h3>2시간 현장 서비스</h3>
+        <p>도착 → 세팅 → 3라운드 제공 → 정리까지. 뜨겁고 바삭한 상태로 3번에 나눠 서빙합니다.</p>
+      </article>
+      <article class="promise reveal d2">
+        <div class="promise__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>20명부터 출동</h3>
+        <p>사무실, 옥상, 정원, 강당 어디든. 20명만 모이면 파티장이 됩니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== MENU 15 ===== -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <p class="kicker kicker--center reveal">MENU 15 + BASIC SET</p>
+      <h2 class="h2 h2--center reveal d1">고정 메뉴 15가지,<br />고민은 저희가 끝냈습니다</h2>
+      <p class="lead lead--center reveal d2">검증된 K치킨 10종과 K분식 5종. 어떤 파티에서도 실패하지 않는 구성입니다.</p>
+
+      <div class="menu__group">
+        <h3 class="menu__group-title reveal"><span class="tag tag--red">K치킨 10종</span></h3>
+        <div class="menu__grid">
+          <div class="mcard reveal"><b>01</b><h4>오리지널 크리스피</h4><p>Gà giòn nguyên bản</p><span>바삭함의 기준</span></div>
+          <div class="mcard reveal"><b>02</b><h4>한국식 양념</h4><p>Gà sốt cay ngọt Hàn Quốc</p><span>K치킨 대표 메뉴</span></div>
+          <div class="mcard reveal"><b>03</b><h4>간장마늘</h4><p>Gà xì dầu tỏi</p><span>가족 모두의 안정픽</span></div>
+          <div class="mcard reveal"><b>04</b><h4>허니버터</h4><p>Gà bơ mật ong</p><span>달콤한 인기 메뉴</span></div>
+          <div class="mcard reveal"><b>05</b><h4>치즈시즈닝</h4><p>Gà phô mai</p><span>SNS 바이럴 담당</span></div>
+          <div class="mcard reveal"><b>06</b><h4>매운치즈</h4><p>Gà phô mai cay</p><span>K푸드 도전 메뉴</span></div>
+          <div class="mcard reveal"><b>07</b><h4>볼케이노 매운맛</h4><p>Gà cay Volcano</p><span>매운맛 마니아용</span></div>
+          <div class="mcard reveal"><b>08</b><h4>갈릭마요</h4><p>Gà sốt tỏi mayo</p><span>부드러운 대중픽</span></div>
+          <div class="mcard reveal"><b>09</b><h4>파닭 스타일</h4><p>Gà hành kiểu Hàn</p><span>한국식 신선함</span></div>
+          <div class="mcard reveal"><b>10</b><h4>블랙페퍼 BBQ</h4><p>Gà BBQ tiêu đen</p><span>외국인 선호 1위</span></div>
+        </div>
+      </div>
+
+      <div class="menu__group">
+        <h3 class="menu__group-title reveal"><span class="tag tag--orange">K분식 · 튀김 5종</span></h3>
+        <div class="menu__grid">
+          <div class="mcard mcard--orange reveal"><b>11</b><h4>한국식 떡볶이</h4><p>Tteokbokki</p><span>K분식의 얼굴</span></div>
+          <div class="mcard mcard--orange reveal"><b>12</b><h4>김말이튀김</h4><p>Chả rong biển chiên</p><span>떡볶이 단짝</span></div>
+          <div class="mcard mcard--orange reveal"><b>13</b><h4>만두튀김</h4><p>Mandu chiên</p><span>바삭 고소</span></div>
+          <div class="mcard mcard--orange reveal"><b>14</b><h4>치즈볼</h4><p>Viên phô mai</p><span>젊은 층 최애</span></div>
+          <div class="mcard mcard--orange reveal"><b>15</b><h4>고구마튀김</h4><p>Khoai lang chiên</p><span>든든한 마무리</span></div>
+        </div>
+      </div>
+
+      <div class="menu__basic reveal">
+        <p class="menu__basic-label">기본 제공</p>
+        <div class="menu__basic-items">
+          <div><h4>치킨무</h4><p>Củ cải muối kiểu Hàn</p></div>
+          <div><h4>양배추 샐러드</h4><p>Salad bắp cải</p></div>
+          <div><h4>식혜</h4><p>Sikhye · 한국식 쌀 음료</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <p class="kicker kicker--center reveal">PARTY MOMENTS</p>
+      <h2 class="h2 h2--center reveal d1">치니가 다녀간 자리는<br />전부 파티가 됩니다</h2>
+    </div>
+    <div class="gallery__grid container">
+      <figure class="gcard gcard--wide reveal">
+        <img src="assets/hero-poster.jpg" alt="오피스 파티에 세팅된 K치킨 뷔페" loading="lazy" />
+        <figcaption>회사 회식 · 오피스 파티</figcaption>
+      </figure>
+      <figure class="gcard reveal d1">
+        <img src="assets/gallery-outdoor.jpg" alt="야외 가든 파티 뷔페 부스" loading="lazy" />
+        <figcaption>야외 · 가든 파티</figcaption>
+      </figure>
+      <figure class="gcard reveal d2">
+        <img src="assets/gallery-table.jpg" alt="치니와 함께한 파티 테이블 세팅" loading="lazy" />
+        <figcaption>생일 · 가족 파티</figcaption>
+      </figure>
+      <figure class="gcard gcard--wide reveal d1">
+        <img src="assets/gallery-truck.jpg" alt="K치킨파티15 푸드트럭" loading="lazy" />
+        <figcaption>푸드트럭 · 행사 출동</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <p class="kicker kicker--center reveal">PRICING</p>
+      <h2 class="h2 h2--center reveal d1">인원이 많을수록<br />1인 가격은 내려갑니다</h2>
+      <p class="lead lead--center reveal d2">15가지 메뉴 + 기본 세트 + 장비 + 인력 + 세팅 + 정리, 전부 포함된 가격입니다.</p>
+
+      <div class="pricing__grid">
+        <article class="pcard reveal">
+          <p class="pcard__people">20 – 29명</p>
+          <p class="pcard__price">299,000<small>₫ / 1인</small></p>
+          <p class="pcard__desc">소규모 모임 · 팀 회식<br />파티의 시작</p>
+        </article>
+        <article class="pcard pcard--hot reveal d1">
+          <p class="pcard__flag">가장 인기</p>
+          <p class="pcard__people">30 – 49명</p>
+          <p class="pcard__price">269,000<small>₫ / 1인</small></p>
+          <p class="pcard__desc">회사 행사 · 학교 모임<br />주력 가격대</p>
+        </article>
+        <article class="pcard reveal d2">
+          <p class="pcard__people">50명 이상</p>
+          <p class="pcard__price">249,000<small>₫ / 1인</small></p>
+          <p class="pcard__desc">대형 단체 · 페스티벌<br />단체 특가</p>
+        </article>
+      </div>
+      <p class="pricing__note reveal">80명 이상 대형 행사는 별도 견적 · 예약금 50% · 호치민 도심권 기준</p>
+    </div>
+  </section>
+
+  <!-- ===== HOW ===== -->
+  <section class="section how" id="how">
+    <div class="container">
+      <p class="kicker kicker--center reveal">HOW IT WORKS</p>
+      <h2 class="h2 h2--center reveal d1">예약부터 파티까지, 4단계</h2>
+      <div class="how__grid">
+        <div class="step reveal"><span class="step__num">1</span><h3>SNS DM 예약</h3><p>Facebook · Instagram · TikTok · Zalo 어디서든 날짜와 인원을 알려주세요.</p></div>
+        <div class="step reveal d1"><span class="step__num">2</span><h3>예약금 50%</h3><p>3일 전까지 예약금을 입금하면 날짜가 확정됩니다.</p></div>
+        <div class="step reveal d2"><span class="step__num">3</span><h3>방문 · 세팅</h3><p>파티 당일, 조리·보온 장비와 함께 방문해 뷔페 라인을 세팅합니다.</p></div>
+        <div class="step reveal d3"><span class="step__num">4</span><h3>2시간 파티</h3><p>15가지 메뉴를 3라운드로 뜨겁게 제공하고, 정리까지 마치고 떠납니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORE (dark chapter) ===== -->
+  <section class="section store" id="store">
+    <div class="container store__grid">
+      <div class="store__text">
+        <p class="kicker kicker--gold reveal">NEXT STEP</p>
+        <h2 class="h2 reveal d1">호치민 1호점,<br /><em class="em-gold">K-Chicken Pub</em>이 옵니다</h2>
+        <p class="lead lead--light reveal d2">
+          치킨 뷔페 라인, 프리미엄 펍 & 바, 라이브 뮤직 스테이지까지.
+          출장 파티의 감동을 매장에서도 이어갑니다.
+        </p>
+        <ul class="store__points reveal d3">
+          <li>K치킨 뷔페 라인 & 포토존</li>
+          <li>맥주 · 소주 · 크래프트 탭</li>
+          <li>라이브 밴드 & K-POP 파티</li>
+        </ul>
+      </div>
+      <figure class="store__img reveal d2">
+        <img src="assets/store-pub.jpg" alt="호치민 1호점 K-Chicken Pub 매장 컨셉" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== CHINI ===== -->
+  <section class="section chini">
+    <div class="container chini__grid">
+      <figure class="chini__img reveal">
+        <img src="assets/goods-plush.jpg" alt="치니 인형과 굿즈" loading="lazy" />
+      </figure>
+      <div class="chini__text">
+        <p class="kicker reveal">OUR MASCOT</p>
+        <h2 class="h2 reveal d1">파티의 주인공,<br /><em>치니</em>를 소개합니다</h2>
+        <p class="lead reveal d2">
+          현장 포토존, 인형, 스티커, 파티 굿즈까지 —
+          치니는 파티가 끝나도 기억에 남는 K치킨파티15의 얼굴입니다.
+        </p>
+        <p class="chini__slogan reveal d3">“Chini — Love in every peep!”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESERVE CTA ===== -->
+  <section class="reserve" id="reserve">
+    <div class="container reserve__inner">
+      <h2 class="reserve__title reveal">이번 파티,<br />치니가 갑니다!</h2>
+      <p class="reserve__sub reveal d1">지금 DM으로 날짜 · 장소 · 인원만 보내주세요.<br />견적은 바로, 파티는 3일 뒤에.</p>
+      <div class="reserve__buttons reveal d2">
+        <a class="sns sns--fb" href="#" aria-label="Facebook으로 예약 문의">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5Z"/></svg>
+          Facebook
+        </a>
+        <a class="sns sns--ig" href="#" aria-label="Instagram으로 예약 문의">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a class="sns sns--tt" href="#" aria-label="TikTok으로 예약 문의">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v2.8c-1.5 0-2.8-.5-3.9-1.3v5.7c0 3.6-2.4 5.9-5.6 5.9-3 0-5.5-2.2-5.5-5.4 0-3.3 2.9-5.7 6.2-5.3v2.9c-1.6-.4-3.3.7-3.3 2.4 0 1.5 1.2 2.6 2.7 2.6 1.6 0 2.7-1.2 2.7-3V3h2.8Z"/></svg>
+          TikTok
+        </a>
+        <a class="sns sns--zl" href="#" aria-label="Zalo로 예약 문의">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-4.2-7.6"/><path d="M9 10h6l-6 4h6"/></svg>
+          Zalo
+        </a>
+      </div>
+      <p class="reserve__meta reveal d3">3일 전 예약 · 최소 20명 · 호치민 전역 출동</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">K-CHICKEN <span>PARTY 15</span></p>
+        <p class="footer__tag">언제 어디서나, 즐거움이 터지는 프리미엄 K-치킨 파티</p>
+      </div>
+      <div class="footer__info">
+        <p>Ho Chi Minh City, Vietnam</p>
+        <p>Tiệc Gà Hàn Quốc 15 Món</p>
+      </div>
+      <p class="footer__copy">© 2026 K-Chicken Party 15. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
